@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  min-height: 450px;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 50px;
+  font-weight: 700;
+  margin:35px 0;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  max-height: 100px;
+}
+
+button {
+  display: flex;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 100px;
+  max-height: 100vh;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+button:hover {
+  background: transparent;
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  transition-duration: 0.4s;
+}
+
+.card-info1, .card-info2, .card-info3 {
+  padding: 50px;
+  line-height: 20px;
+}
+
+.card-info1 {
+  background: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.card-info2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-info3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: -50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    margin: 50px 0;
+  }
+  .card-wrap {
+    flex-direction: column;
+  }
+  .card {
+    width: 65%;
+    min-height: 425px;
+  }
+  button {
+    margin-top: 60px;
+  }
+  .card-info1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .card-info3 {
+    border-radius: 0 0 10px 10px;
+  }
+  .attribution {
+    margin-top: 500px;
+  }
+}
